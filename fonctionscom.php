@@ -72,8 +72,8 @@ function validNombreInf($nbre,string $key,array &$arrError, int $i ):void
    //fonction
    function estPremier($a):bool
    {
-    if ($a == 1)
-    return 0;
+    //if ($a == 1)
+    //return 0;
     for ($i = 2; $i <= $a/2; $i++)
     {
         if ($a % $i == 0)

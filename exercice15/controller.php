@@ -9,17 +9,33 @@ error_reporting(E_ALL);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../exercice13/css/style.css">
+    <link rel="stylesheet" href="../exercice11/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
 <?php 
-
 include_once("fonctions.php");
+include_once("../fonctionscom.php");
+  session_start();
 if(isset($_POST['submit']))
 {
-       $a= $_POST['textarea'];
+    $a=$_POST['nbr'];
+    $b=$_POST['color'];
+    $c=$_POST['radio'];
+    $_SESSION['post']=$_POST;
+    $arrError=[];
+    $matrice=[][];
+    validNombreInf($a,"nbr",$arrError,2);
+    if(count($arrError)==0)
+    {
+        session_unset();
+    }else{
+        $_SESSION['error']=$arrError;
+        //var_dump( $_SESSION);
+        header('location:index.php'); 
+        exit();
+    }
 }
 else
 {
@@ -28,16 +44,6 @@ else
     exit();
 }
 ?>
-<div class="contain">
-         <form action="controller.php" method="POST">
-        <div class="boite"> 
-            <label for="">Phrases corigées</label>
-        <div class="input">
-            <textarea name="textarea" id="" cols="30" rows="10" readonly><?php echo searchPoint($a)?></textarea>
-        </div>
-        </div>
-    </form>
-    </div>
     <br> <br>
     <a href="index.php">RETOUR FORM</a>
 </body>

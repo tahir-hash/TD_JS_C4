@@ -17,9 +17,8 @@
         <div class="boite"> 
             <label for="">Saisir des Phrases</label>
         <div class="input">
-            <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+            <textarea name="textarea" id="" cols="30" rows="10" required></textarea>
         </div>
-    
         <input type="submit" name="submit" value=Valider>
 
         </div>

@@ -50,5 +50,6 @@ function afficheTabInf($nbre,array $tab)
             }
         }
 }
+
 ?>
 
