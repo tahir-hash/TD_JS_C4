@@ -21,10 +21,9 @@ body
 {
     padding: 0.5em 0.25em 0.5em 0.25em;
 }
-textarea
+input[type='text']
 {
-    width: 130%;
-    
+    width: 100%;
     line-height: 1.563em;
     padding: 0.313em;
     border-radius: 0.313em;
@@ -51,7 +50,7 @@ input[type="submit"]
 {
     background-color: #410eea;
     color: #eff7f7;
-    width: 100%;
+    width: 60%;
     height: 3.125em;
     border-radius: 1.25em;
     margin-left: 13%;

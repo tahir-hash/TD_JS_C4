@@ -33,7 +33,7 @@ else
         <div class="boite"> 
             <label for="">Phrases corigées</label>
         <div class="input">
-            <textarea name="textarea" id="" cols="30" rows="10" readonly><?php echo searchPoint($a)?></textarea>
+            <textarea name="textarea" id="" cols="30" rows="10" readonly><?= decoupe($a) ?></textarea>
         </div>
         </div>
     </form>

@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
    10=> 'October',
    11 => 'November',
    12 => 'Décember');
-    if
+   
             afficheMois($month);
 }
 else

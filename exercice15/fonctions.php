@@ -1,5 +1,5 @@
 <?php
-    function colorHaut($a, &array $tab,$color)
+    function colorHaut($a, &array $tab,$col)
     {
             for ($i=0; $i<$a;$i++)
             {
@@ -7,7 +7,7 @@
                     {
                             if($i<$j)
                             {
-                                echo $color;
+                                echo $col;
                             }
                     }
             }

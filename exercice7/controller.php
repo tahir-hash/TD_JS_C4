@@ -1,6 +1,9 @@
 <?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include_once("fonctions.php");
-
+include_once("../fonctionscom.php");
   session_start();
 if(isset($_POST['btn_ok']))
 {
@@ -13,8 +16,14 @@ if(isset($_POST['btn_ok']))
     validNombre($b,"b",$arrError);
     validNombre($c,"c",$arrError);
     if(count($arrError)==0){
-        equationSecondDegre($a,$b,$c);
+        $date= "$a."-".$b."-".$c";
+        echo $date;
+        next_precdate($date); echo '</br></br>';
+        var_dump($_SESSION);
+        //unset($_SESSION['post']);
+        //unset($_SESSION['error']);
         session_unset();
+
     }else{
         $_SESSION['error']=$arrError;
         //var_dump( $_SESSION);
