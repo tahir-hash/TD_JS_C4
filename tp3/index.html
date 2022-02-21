@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contain">
+      <div class="ecran" onmouseout="copyHidden()" onmouseover="hoverCopy()">
+          <input  readonly class="affiche"> <br>
+          <button id="copied" onclick="copied()" class="copy">Copy</button>
+      </div>
+      <div class="formulaire">
+          <!-- <form action="">  -->
+                <div class="form-control test">
+                <label for="passLength">La longueur du mot de passe</label>
+                <input type="number" placeholder="15"  id="passLength">
+                <!-- <small>Error message</small> -->
+            </div>
+            <div class="form-control">
+                <label for="maj">Contient des lettres majuscules</label>
+                <input  type="checkbox" onclick="actif()" class="check" id="maj">
+            
+            </div>
+            <div class="form-control">
+                <label for="min">Contient des lettres minuscules</label>
+                <input type="checkbox" onclick="actif()" class="check" id="min">
+            </div>
+            <div class="form-control">
+                <label for="nbr">Contient des nombres</label>
+                <input type="checkbox" onclick="actif()" class="check" id="nbr" >
+            </div>
+            <div class="form-control">
+                <label for="spc">Contient des caractères spéciaux</label>
+                <input type="checkbox" onclick="actif()" class="check" id="spc">
+            </div>
+            <button id="submit" disabled="disabled" onclick="passwordGenerate()">Génerer Le Mot de Passe</button>
+          <!-- </form> -->
+       
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
