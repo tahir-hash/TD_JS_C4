@@ -73,3 +73,23 @@ label span
     color: white;
     font-size: 20px;  
 }
+#empty
+{
+    color: red;
+    position: relative;
+    left: 10%;
+    font-size: 20px;
+}
+#correct, #error
+{
+    text-align: center;
+    font-size: 20px;
+}
+#error
+{
+   color: red;
+}
+#correct
+{
+    color: #00ff48;
+}

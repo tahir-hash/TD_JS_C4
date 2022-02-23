@@ -5,7 +5,7 @@
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #7BDBF3;
+    background-color: #c1aaaa;
 }
 
 .formgroup
@@ -13,24 +13,30 @@ body
     display: flex;
     flex-direction: column;
     margin: 0 2% 2% 0;
+    width: 14%;
 }
 .additem
 {
     display: flex;
     justify-content: right;
-    margin-right: 7%;
+    margin-right: 4%;
 }
-.additem span
+.additem button
 {
     color: white;
     border: 1px solid white;
     background-color: #9EC962;
-    border-radius: 9999px;
-   
+    padding: 1%;
+   border-radius: 9999px; 
     justify-content: center;
     display: flex;
+    font-size: 15px;
 }
 
+textarea
+{
+    
+}
 #subcontain
 {
     display: flex;
@@ -41,7 +47,6 @@ body
     display: flex;
     background-color: #9EC962;
   justify-content: right;
-
 }
 input[type="image"]
 {
@@ -54,4 +59,16 @@ input[type="image"]
 #subcontain
 {
     margin: 6% 0  0 3%;
+}
+.hide
+{
+    display: none;
+}
+.blank
+{
+    width: 75%;
+}
+.image
+{
+    display: flex;
 }

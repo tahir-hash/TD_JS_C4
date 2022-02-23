@@ -33,10 +33,10 @@ var questions=[
     },
     {
         quest:"Qui est mon joueur de basket favori ?",
-        a:"Jordan",
-        b:"Curry",
-        c:"Lebron",
-        d:"Ball",
+        a:"Micheal Jordan",
+        b:" Stephen Curry",
+        c:"Lebron James",
+        d:"Lamello Ball",
         rep: "c"
     }
 ];
@@ -71,9 +71,10 @@ function suivant()
     var selectionner = document.querySelector('input[type="radio"]:checked');
     if(!selectionner)
     {
-        alert ("Veuiller choisir");
+        document.getElementById("empty").innerText= "Veuillez cochez une case.";
         return;
     }
+    //checked
     var reponse = selectionner.value;
     console.log(reponse);
     console.log(selectionner);
@@ -81,11 +82,10 @@ function suivant()
     {
         score++;
        
-
     }
     selectionner.checked=false;
     enCours++;
-    
+    document.getElementById("empty").innerText= "";
     if(enCours==taille)
     {
         contain.style.display="none";

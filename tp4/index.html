@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2 id="correct error"></h2>
     <div class="contain">
         <h1 class="titre"></h1>
        
@@ -28,7 +29,7 @@
             <input type="radio" id="Q4" name="question" value="d">
             <label for="Q4"><span id="four"></span></label>
         </div>
-        <!-- <button id="submit">Suivant</button> -->
+       <span id="empty"></span>
         <input type="submit" onclick="suivant()" id="submit" value="Suivant">
       </div>
     </div>
@@ -36,7 +37,6 @@
         <h1 class="showScore"></h1>
         <form action="index.html">
             <input type="submit" value="Rejouez"  id="restart">
-
         </form>
     </div>
     <script src="script.js"></script>
