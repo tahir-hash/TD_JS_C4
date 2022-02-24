@@ -13,7 +13,6 @@ body
     display: flex;
     flex-direction: column;
     margin: 0 2% 2% 0;
-    width: 14%;
 }
 .additem
 {
@@ -33,10 +32,6 @@ body
     font-size: 15px;
 }
 
-textarea
-{
-    
-}
 #subcontain
 {
     display: flex;
@@ -46,7 +41,18 @@ textarea
 {
     display: flex;
     background-color: #9EC962;
-  justify-content: right;
+    justify-content: space-between;
+}
+.blank
+{
+    width: 75%;
+    cursor: grab;
+    color: #9EC962;
+    user-select: none;
+}
+.image
+{
+    display: flex;
 }
 input[type="image"]
 {
@@ -64,11 +70,4 @@ input[type="image"]
 {
     display: none;
 }
-.blank
-{
-    width: 75%;
-}
-.image
-{
-    display: flex;
-}
+

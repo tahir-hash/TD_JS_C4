@@ -17,6 +17,7 @@ btnAdd.addEventListener('click',function()
       const image = document.createElement('div');
       const blank = document.createElement('div');
       blank.setAttribute("class", "blank");
+     blank.innerHTML="TahirTahirTahirTahirTahirTahir";
       image.setAttribute("class", "image");
       const image2 = document.createElement("input");
       image2.setAttribute("class", "affichageIcons");
@@ -25,6 +26,7 @@ btnAdd.addEventListener('click',function()
       const textarea = document.createElement("textarea");
       textarea.setAttribute("cols", "30");
       textarea.setAttribute("rows", "20");
+      textarea.setAttribute("class", "textarea");
       subcontain.appendChild(formgroup);
       icones.appendChild(blank);
       icones.appendChild(image);
